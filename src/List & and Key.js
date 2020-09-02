@@ -1,11 +1,15 @@
 import React from 'react'
 
+function NumberItem(props) {
+    return (<li>{props.value}</li>)
+}
+
 function NumberList(props) {
-    const number = props.numbers;
-    const listItems = number.map((number)=><li key={number.toString()}>{number}</li>);
+    const numbers = props.numbers;
+    const listItem = numbers.map((number)=> <NumberItem key={number.toString()} value={number}/>);
     return(
         <ul>
-            {listItems}
+            {listItem}
         </ul>
     )
 }
