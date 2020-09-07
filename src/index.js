@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
 import ClassApp from './class components'
 import PropsApp from "./props";
@@ -19,6 +19,8 @@ import EassyForm from "./EassyForm";
 import FlavourForm from "./SelectTag";
 import ReservationForm from "./ReservationForm";
 import Calculator from "./TemperatureCalculator";
+import MountApp from './componentDidMounted'
+import App from './React-router-crush-course/App'
 
 
 const numbers = [1,2,4,5,6];
@@ -26,7 +28,7 @@ const posts = [
     {id:1,title:'Hello Sifat',content:'Welcome to learning react.'},
     {id:2,title:'Hello Tanha',content:'Welcome to second object.'}
 ];
-ReactDOM.render(<Calculator/>,document.getElementById('root'));
+ReactDOM.render(<App/>,document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
